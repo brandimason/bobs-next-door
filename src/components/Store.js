@@ -1,19 +1,20 @@
 import React from 'react'
 
-function Store({store}) {
+function Store({singleStore}) {
+    // console.log(singleStore)
     return (
     <tr>
         <td className="row-name">
-            <span>NAME</span>
+            <span>{singleStore.name}</span>
         </td>
         <td>
-            <a href="" target="_blank"><b>&#8599;</b></a>
+            <a href={singleStore.image} target="_blank"><b>&#8599;</b></a>
         </td>
         <td>
-            <span>SEASON</span>
+            <span>{singleStore.season}</span>
         </td>
         <td>
-            <span>EPISODE</span>
+            <span>{singleStore.episode}</span>
         </td>
     </tr>
     );
